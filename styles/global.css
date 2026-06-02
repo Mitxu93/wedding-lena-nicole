@@ -240,11 +240,13 @@ p {
   color: white;
   background: var(--burgundy);
   box-shadow: 0 14px 36px rgba(71, 17, 31, 0.28);
+  cursor: pointer;
 }
 
 .secondary-button {
   color: var(--burgundy-dark);
   background: rgba(123, 30, 53, 0.12);
+  cursor: pointer;
 }
 
 .secondary-button:disabled {
@@ -374,6 +376,7 @@ p {
 .details-section,
 .location-section,
 .schedule-section,
+.future-section,
 .memories-section,
 .rsvp-section {
   border-top: 1px solid var(--line);
@@ -501,16 +504,48 @@ p {
   margin-bottom: 0;
 }
 
+.future-section,
 .memories-section,
 .rsvp-section {
   text-align: center;
 }
 
+.future-section p,
 .memories-section p,
 .rsvp-section p {
   width: min(36rem, 100%);
   margin-right: auto;
   margin-left: auto;
+}
+
+.future-section p {
+  font-size: 1.08rem;
+}
+
+.reveal-iban-button {
+  gap: 0.55rem;
+  margin-top: 0.6rem;
+  background: var(--burgundy);
+}
+
+.icon-wine {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: none;
+  stroke: var(--copper);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.iban-text {
+  margin-top: 2rem;
+  color: var(--ink);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1.05rem, 4vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 .footer {
@@ -565,7 +600,7 @@ p {
   stroke: var(--copper);
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.45;
+  stroke-width: 4;
 }
 
 @media (min-width: 720px) {
@@ -577,9 +612,9 @@ p {
   .nav-links {
     display: flex;
     justify-content: center;
-    gap: 1.1rem;
+    gap: clamp(0.55rem, 1.2vw, 1rem);
     color: rgba(255, 250, 242, 0.88);
-    font-size: 0.82rem;
+    font-size: clamp(0.68rem, 1vw, 0.78rem);
     font-weight: 800;
     text-transform: uppercase;
   }

@@ -3,10 +3,13 @@ const weddingDate = new Date('2026-10-31T12:30:00+01:00');
 const translations = {
   es: {
     nav: {
-      date: 'Fecha',
+      story: 'Historia',
       details: 'FAQ',
       location: 'Lugar',
       schedule: 'Horario',
+      future: 'Regalo',
+      memories: 'Recuerdos',
+      rsvp: 'RSVP',
     },
     hero: {
       title: 'LÉNA & NICOLE',
@@ -14,12 +17,13 @@ const translations = {
       cta: 'Confirmar asistencia',
     },
     date: {
-      title: 'Nos vemos en otoño',
-      text:
-        'Será una celebración tranquila, bonita y muy nuestra: hojas doradas, detalles burdeos, buena mesa y ganas de compartir el día con la gente que queremos.',
-      full: 'Sábado, 31 de octubre de 2026',
-      rugby:
-        'Ese día jugamos el partido más bonito: todas las personas que queremos en el mismo equipo.',
+      title: 'Nuestra historia',
+      subtitle: 'Cómo empezó todo',
+      paragraphOne: 'Nos conocimos jugando una contra la otra en un campo de rugby.',
+      paragraphTwo:
+        'Lo que comenzó como un encuentro casual se convirtió en una historia llena de viajes, aventuras, risas y complicidad.',
+      paragraphThree:
+        'Dos años después queremos celebrar con vosotros el comienzo de nuestro próximo capítulo.',
     },
     countdown: {
       title: 'Cuenta atrás',
@@ -61,28 +65,47 @@ const translations = {
       title: 'Horario provisional',
       ceremonyTitle: 'Ceremonia',
       ceremonyText: 'El primer silbato del día, con emoción y pañuelos cerca.',
-      cocktailTitle: 'Cóctel',
-      cocktailText: 'Brindis, abrazos y algo rico para empezar la celebración.',
+      cocktailTitle: 'Aperitivos',
+      cocktailText: 'Un rato para picar, brindar y arrancar la celebración con calma.',
+      gameTitle: 'Leles game',
+      gameText: 'Un momento de juego y risas para seguir celebrando juntas.',
       dinnerTitle: 'Cena',
       dinnerText: 'Mesa larga, conversación fácil y detalles de temporada.',
       partyText: 'Disfraz opcional para quien quiera rematar la noche con un poco de magia.',
+    },
+    future: {
+      kicker: 'Regalo',
+      title: 'Un brindis por el futuro',
+      textOne: 'Vuestra presencia es nuestro mejor regalo.',
+      textTwo: 'Si además queréis participar en nuestro próximo proyecto...',
+      button: 'Descubrir',
+    },
+    memories: {
+      kicker: 'Fotos y vídeos',
+      title: 'Compartir recuerdos',
+      text: 'Después de la boda podréis compartir aquí vuestras fotos y vídeos.',
+      button: 'Subir a Google Drive',
     },
     rsvp: {
       title: 'Confirmación de asistencia',
       text:
         'Aquí irá el formulario de Google Forms para confirmar asistencia, alergias, alojamiento y otros detalles importantes.',
-      button: 'Formulario próximamente',
+      button: 'Abrir formulario',
     },
     footer: {
-      text: 'Léna & Nicole · 31 de octubre de 2026 · Con cariño y un toque burdeos',
+      names: 'Léna & Nicole',
+      date: '31 de octubre de 2026',
     },
   },
   fr: {
     nav: {
-      date: 'Date',
+      story: 'Histoire',
       details: 'FAQ',
       location: 'Lieu',
       schedule: 'Programme',
+      future: 'Cadeau',
+      memories: 'Souvenirs',
+      rsvp: 'RSVP',
     },
     hero: {
       title: 'LÉNA & NICOLE',
@@ -91,12 +114,14 @@ const translations = {
       cta: 'Confirmer ma présence',
     },
     date: {
-      title: 'Rendez-vous en automne',
-      text:
-        "Une célébration douce, élégante et très personnelle : feuilles dorées, détails bordeaux, belle table et l'envie de partager ce jour avec celles et ceux qu'on aime.",
-      full: 'Samedi 31 octobre 2026',
-      rugby:
-        "Ce jour-là, nous jouons le plus beau match : toutes les personnes qu'on aime dans la même équipe.",
+      title: 'Notre histoire',
+      subtitle: 'Comment tout a commencé',
+      paragraphOne:
+        "Nous nous sommes rencontrées en jouant l'une contre l'autre sur un terrain de rugby.",
+      paragraphTwo:
+        "Ce qui a commencé comme une rencontre par hasard est devenu une histoire pleine de voyages, d'aventures, de rires et de complicité.",
+      paragraphThree:
+        'Deux ans plus tard, nous voulons célébrer avec vous le début de notre prochain chapitre.',
     },
     countdown: {
       title: 'Compte à rebours',
@@ -140,20 +165,36 @@ const translations = {
       title: 'Programme provisoire',
       ceremonyTitle: 'Cérémonie',
       ceremonyText: 'Le premier coup de sifflet de la journée, avec émotion garantie.',
-      cocktailTitle: 'Cocktail',
-      cocktailText: 'Toasts, retrouvailles et de quoi commencer la fête en beauté.',
+      cocktailTitle: 'Apéritifs',
+      cocktailText: 'Un moment pour grignoter, trinquer et lancer la fête en douceur.',
+      gameTitle: 'Leles game',
+      gameText: 'Un moment de jeu et de rires pour continuer la fête ensemble.',
       dinnerTitle: 'Dîner',
       dinnerText: 'Une belle table, des conversations faciles et des détails de saison.',
       partyText: 'Déguisement optionnel pour terminer la soirée avec une touche de magie.',
+    },
+    future: {
+      kicker: 'Cadeau',
+      title: "Un toast à l'avenir",
+      textOne: 'Votre présence est notre plus beau cadeau.',
+      textTwo: 'Si vous souhaitez aussi participer à notre prochain projet...',
+      button: 'Découvrir',
+    },
+    memories: {
+      kicker: 'Photos et vidéos',
+      title: 'Partager les souvenirs',
+      text: 'Après le mariage, vous pourrez partager ici vos photos et vidéos.',
+      button: 'Ajouter sur Google Drive',
     },
     rsvp: {
       title: 'Confirmation de présence',
       text:
         "Le formulaire Google Forms sera intégré ici pour confirmer la présence, les allergies, l'hébergement et les informations importantes.",
-      button: 'Formulaire à venir',
+      button: 'Ouvrir le formulaire',
     },
     footer: {
-      text: 'Léna & Nicole · 31 octobre 2026 · Avec amour et une touche bordeaux',
+      names: 'Léna & Nicole',
+      date: '31 octobre 2026',
     },
   },
 };
@@ -192,6 +233,14 @@ function updateCountdown() {
 
 document.querySelectorAll('[data-language]').forEach((button) => {
   button.addEventListener('click', () => setLanguage(button.dataset.language));
+});
+
+document.querySelector('.reveal-iban-button')?.addEventListener('click', (event) => {
+  const button = event.currentTarget;
+  const iban = document.querySelector('#iban');
+
+  iban.hidden = false;
+  button.setAttribute('aria-expanded', 'true');
 });
 
 setLanguage('es');
