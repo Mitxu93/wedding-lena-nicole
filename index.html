@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page de boda de Léna y Nicole, 31 de octubre de 2026."
+    />
+    <title>Léna & Nicole | 31 · 10 · 2026</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Léna y Nicole">
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img class="brand-logo" src="./assets/logo-ln-burgundy-header.png" alt="" />
+        </span>
+        <span class="brand-copy">31 · 10 · 2026</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#fecha" data-i18n="nav.date">Fecha</a>
+        <a href="#faq" data-i18n="nav.details">FAQ</a>
+        <a href="#lugar" data-i18n="nav.location">Lugar</a>
+        <a href="#horario" data-i18n="nav.schedule">Horario</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Selector de idioma">
+        <button class="active" type="button" data-language="es">ES</button>
+        <button type="button" data-language="fr">FR</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Wedding day</p>
+          <h1 data-i18n="hero.title">LÉNA & NICOLE</h1>
+          <p class="hero-date">31 · 10 · 2026</p>
+          <p class="hero-quote" data-i18n="hero.quote">
+            Hay encuentros que parecen casualidad, hasta que descubres que eran serendipia.
+          </p>
+          <a class="primary-button" href="#rsvp" data-i18n="hero.cta">Confirmar asistencia</a>
+        </div>
+      </section>
+
+      <section id="fecha" class="section date-section">
+        <div class="section-kicker">31 · 10 · 2026</div>
+        <h2 data-i18n="date.title">Nos vemos en otoño</h2>
+        <p data-i18n="date.text">
+          Será una celebración tranquila, bonita y muy nuestra: hojas doradas, detalles burdeos,
+          buena mesa y ganas de compartir el día con la gente que queremos.
+        </p>
+        <p class="date-card" data-i18n="date.full">Sábado, 31 de octubre de 2026</p>
+        <p class="rugby-note" data-i18n="date.rugby">
+          Ese día jugamos el partido más bonito: todas las personas que queremos en el mismo equipo.
+        </p>
+
+        <div class="scoreboard" aria-label="Cuenta atrás">
+          <span data-i18n="countdown.title"  class="section-kicker">Cuenta atrás</span>
+          <div class="countdown-grid">
+            <div class="countdown-item">
+              <strong id="days">00</strong>
+              <small data-i18n="countdown.days">días</small>
+            </div>
+            <div class="countdown-item">
+              <strong id="hours">00</strong>
+              <small data-i18n="countdown.hours">horas</small>
+            </div>
+            <div class="countdown-item">
+              <strong id="minutes">00</strong>
+              <small data-i18n="countdown.minutes">min</small>
+            </div>
+            <div class="countdown-item">
+              <strong id="seconds">00</strong>
+              <small data-i18n="countdown.seconds">seg</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section details-section">
+        <div class="section-kicker">FAQ</div>
+        <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3 data-i18n="faq.dateTitle">Fecha</h3>
+            <p data-i18n="faq.dateText">Sábado, 31 de octubre de 2026.</p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq.timeTitle">Hora</h3>
+            <p data-i18n="faq.timeText">
+              La ceremonia empezará a las 12:30. Recomendamos llegar con un poco de margen.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq.dressTitle">Dress code</h3>
+            <p data-i18n="faq.dressText">
+              Elegante y cómodo. Si te apetece, puedes añadir un guiño otoñal o burdeos.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Halloween</h3>
+            <p data-i18n="faq.halloweenText">
+              Por la noche habrá Halloween After Party. El disfraz es opcional, la actitud no.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq.kidsTitle">Niños</h3>
+            <p data-i18n="faq.kidsText">
+              Estamos preparando los detalles finales. Actualizaremos esta sección más adelante.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq.giftTitle">Regalo</h3>
+            <p data-i18n="faq.giftText">
+              Lo importante es que vengas. Si más adelante añadimos alguna indicación, aparecerá aquí.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="lugar" class="section location-section">
+        <div class="location-content">
+          <div>
+            <div class="section-kicker">Molino Galán</div>
+            <h2 data-i18n="location.title">Cómo llegar</h2>
+            <p class="address-label" data-i18n="location.addressLabel">Dirección</p>
+            <p class="address" data-i18n="location.address">Molino Galán, Alborache, Valencia</p>
+            <p data-i18n="location.text">
+              El lugar está en Alborache, rodeado de naturaleza y muy cerca de Valencia. Más adelante
+              añadiremos indicaciones precisas de llegada, transporte y aparcamiento.
+            </p>
+          </div>
+
+          <div class="map-placeholder" aria-label="Mapa de Molino Galán Eventos">
+            <iframe
+              title="Mapa de Molino Galán Eventos"
+              src="https://www.google.com/maps?q=39.4019864,-0.7762768&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/place/Molino+Galan+Eventos/@39.4019863,-0.7786587,18z/data=!4m10!1m2!2m1!1smolino+galan+alborache!3m6!1s0xd60e591a6899e27:0x92a47ee5976f02c6!8m2!3d39.4019864!4d-0.7762768!15sChZtb2xpbm8gZ2FsYW4gYWxib3JhY2hlkgEWZnVuY3Rpb25fcm9vbV9mYWNpbGl0eeABAA!16s%2Fg%2F11v0c80sg9?entry=ttu"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="location.map"
+            >
+              Abrir en Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="accommodation-note">
+          <h3 data-i18n="accommodation.title">Alojamiento</h3>
+          <p data-i18n="accommodation.text">
+            Plazas limitadas, unas 60 aproximadamente. Tendrán prioridad las personas invitadas de
+            Francia y quienes vengan de fuera de Valencia.
+          </p>
+        </div>
+      </section>
+
+      <section id="horario" class="section schedule-section">
+        <div class="section-kicker">Match day</div>
+        <h2 data-i18n="schedule.title">Horario provisional</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <time>12:30</time>
+              <h3 data-i18n="schedule.ceremonyTitle">Ceremonia</h3>
+              <p data-i18n="schedule.ceremonyText">
+                El primer silbato del día, con emoción y pañuelos cerca.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3 data-i18n="schedule.cocktailTitle">Cóctel</h3>
+              <p data-i18n="schedule.cocktailText">
+                Brindis, abrazos y algo rico para empezar la celebración.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3 data-i18n="schedule.dinnerTitle">Cena</h3>
+              <p data-i18n="schedule.dinnerText">
+                Mesa larga, conversación fácil y detalles de temporada.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Halloween After Party</h3>
+              <p data-i18n="schedule.partyText">
+                Disfraz opcional para quien quiera rematar la noche con un poco de magia.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="rsvp" class="section rsvp-section">
+        <div class="section-kicker">RSVP</div>
+        <h2 data-i18n="rsvp.title">Confirmación de asistencia</h2>
+        <p data-i18n="rsvp.text">
+          Aquí irá el formulario de Google Forms para confirmar asistencia, alergias, alojamiento y
+          otros detalles importantes.
+        </p>
+        <button class="secondary-button" type="button" disabled data-i18n="rsvp.button">
+          Formulario próximamente
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-i18n="footer.text">
+        Léna & Nicole · 31 de octubre de 2026 · Con cariño y un toque burdeos
+      </p>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
