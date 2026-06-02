@@ -268,6 +268,36 @@ p {
   margin-left: auto;
 }
 
+.story-subtitle {
+  margin-bottom: 1.4rem;
+  color: var(--muted);
+  font-size: clamp(1.15rem, 4vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.story-copy {
+  display: grid;
+  width: min(58rem, 100%);
+  gap: 1.25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.story-copy p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.story-divider {
+  width: min(9rem, 38vw);
+  height: 2px;
+  margin: 3rem auto 0;
+  background: var(--copper);
+  opacity: 0.8;
+}
+
 .date-card {
   display: inline-flex;
   align-items: center;
@@ -286,20 +316,6 @@ p {
   position: relative;
   padding-top: 1.2rem;
   font-weight: 700;
-}
-
-.rugby-note::before {
-  display: block;
-  width: min(15rem, 70%);
-  height: 1px;
-  margin: 0 auto 1.2rem;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--moss) 0 2rem,
-    transparent 2rem 2.5rem
-  );
-  content: "";
-  opacity: 0.45;
 }
 
 .scoreboard {
@@ -358,6 +374,7 @@ p {
 .details-section,
 .location-section,
 .schedule-section,
+.memories-section,
 .rsvp-section {
   border-top: 1px solid var(--line);
 }
@@ -484,10 +501,12 @@ p {
   margin-bottom: 0;
 }
 
+.memories-section,
 .rsvp-section {
   text-align: center;
 }
 
+.memories-section p,
 .rsvp-section p {
   width: min(36rem, 100%);
   margin-right: auto;
