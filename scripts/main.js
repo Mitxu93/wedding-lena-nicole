@@ -1,4 +1,4 @@
-const weddingDate = new Date('2026-10-31T12:30:00+01:00');
+const weddingDate = new Date('2026-10-31T13:00:00+01:00');
 
 const translations = {
   es: {
@@ -12,7 +12,7 @@ const translations = {
       rsvp: 'RSVP',
     },
     hero: {
-      title: 'LÉNA & NICOLE',
+      title: 'LENA & NICOLE',
       quote: 'Hay encuentros que parecen casualidad, hasta que descubres que eran serendipia.',
       cta: 'Confirmar asistencia',
     },
@@ -24,6 +24,9 @@ const translations = {
         'Lo que comenzó como un encuentro casual se convirtió en una historia llena de viajes, aventuras, risas y complicidad.',
       paragraphThree:
         'Dos años después queremos celebrar con vosotros el comienzo de nuestro próximo capítulo.',
+      full: 'Sábado, 31 de octubre de 2026',
+      rugby:
+        'Ese día jugamos el partido más bonito: todas las personas que queremos en el mismo equipo.',
     },
     countdown: {
       title: 'Cuenta atrás',
@@ -37,13 +40,10 @@ const translations = {
       dateTitle: 'Fecha',
       dateText: 'Sábado, 31 de octubre de 2026.',
       timeTitle: 'Hora',
-      timeText: 'La ceremonia empezará a las 12:30. Recomendamos llegar con un poco de margen.',
+      timeText: 'La ceremonia empezará a las 13:00. Recomendamos llegar con un poco de margen.',
       dressTitle: 'Dress code',
-      dressText: 'Elegante y cómodo. Si te apetece, puedes añadir un guiño otoñal o burdeos.',
-      halloweenText:
-        'Por la noche habrá Halloween After Party. El disfraz es opcional, la actitud no.',
-      kidsTitle: 'Niños',
-      kidsText: 'Estamos preparando los detalles finales. Actualizaremos esta sección más adelante.',
+      dressText:
+        'Elegante y cómodo. Si te apetece, puedes traer disfraz de Halloween para la fiesta final.',
       giftTitle: 'Regalo',
       giftText:
         'Lo importante es que vengas. Si más adelante añadimos alguna indicación, aparecerá aquí.',
@@ -93,7 +93,7 @@ const translations = {
       button: 'Abrir formulario',
     },
     footer: {
-      names: 'Léna & Nicole',
+      names: 'Lena & Nicole',
       date: '31 de octubre de 2026',
     },
   },
@@ -122,6 +122,9 @@ const translations = {
         "Ce qui a commencé comme une rencontre par hasard est devenu une histoire pleine de voyages, d'aventures, de rires et de complicité.",
       paragraphThree:
         'Deux ans plus tard, nous voulons célébrer avec vous le début de notre prochain chapitre.',
+      full: 'Samedi 31 octobre 2026',
+      rugby:
+        "Ce jour-là, nous jouons le plus beau match : toutes les personnes que nous aimons dans la même équipe.",
     },
     countdown: {
       title: 'Compte à rebours',
@@ -136,14 +139,10 @@ const translations = {
       dateText: 'Samedi 31 octobre 2026.',
       timeTitle: 'Heure',
       timeText:
-        "La cérémonie commencera à 12h30. Nous vous conseillons d'arriver un peu en avance.",
+        "La cérémonie commencera à 13h00. Nous vous conseillons d'arriver un peu en avance.",
       dressTitle: 'Dress code',
-      dressText: "Élégant et confortable. Un clin d'oeil automnal ou bordeaux est le bienvenu.",
-      halloweenText:
-        "Le soir, place à la Halloween After Party. Le déguisement est optionnel, l'envie de danser beaucoup moins.",
-      kidsTitle: 'Enfants',
-      kidsText:
-        'Nous préparons encore les derniers détails. Cette section sera mise à jour plus tard.',
+      dressText:
+        "Élégant et confortable. Si vous en avez envie, vous pouvez apporter un déguisement d'Halloween pour la fête de fin de soirée.",
       giftTitle: 'Cadeau',
       giftText:
         "Le plus important est votre présence. Si nous ajoutons une indication, elle apparaîtra ici.",
